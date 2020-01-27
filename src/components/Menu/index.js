@@ -9,15 +9,20 @@ const Menu = ({ isOpen }) => {
     open: {
       opacity: 1,
       y: 0,
+      x: 0,
+      borderRadius: '0 0 0 0',
       transition: {
-        ease: 'easeOut'
+        when: 'beforeChildren',
+        ease: 'circIn'
       }
     },
     closed: {
       opacity: 0,
       y: "-100%",
+      x: '-100%',
+      borderRadius: '0 0 50% 50%',
       transition: {
-        ease: 'easeOut'
+        ease: 'circOut'
       }
     }
   }
