@@ -7,6 +7,19 @@
   pointer-events: none;
 }
 
+.menu-toggle {
+  position: fixed;
+  font-size: 30px;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  background: purple;
+  color: white;
+  z-index: 10;
+  top: 1.5em;
+  left: 1.5em;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
