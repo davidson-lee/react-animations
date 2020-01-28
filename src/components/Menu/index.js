@@ -9,8 +9,6 @@ const Menu = ({ isOpen }) => {
     open: {
       opacity: 1,
       y: 0,
-      x: 0,
-      borderRadius: '0 0 0 0',
       transition: {
         when: 'beforeChildren',
         ease: 'circIn'
@@ -19,8 +17,6 @@ const Menu = ({ isOpen }) => {
     closed: {
       opacity: 0,
       y: "-100%",
-      x: '-100%',
-      borderRadius: '0 0 50% 50%',
       transition: {
         ease: 'circOut'
       }
@@ -51,9 +47,9 @@ const Menu = ({ isOpen }) => {
 
   return (
     <motion.div
+      variants={menu}
       animate={isOpen ? "open" : "closed"}
       initial="closed"
-      variants={menu}
       className="nav"
     >
       <motion.div variants={items} className="menu-item-container">

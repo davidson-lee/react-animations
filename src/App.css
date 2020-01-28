@@ -9,15 +9,36 @@
 
 .menu-toggle {
   position: fixed;
-  font-size: 30px;
-  width: 1.5em;
-  height: 1.5em;
-  border-radius: 50%;
-  background: purple;
-  color: white;
+  font-size: 20px;
+  width: 3em;
+  height: 2em;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  border: 2px solid black;
   z-index: 10;
   top: 1.5em;
   left: 1.5em;
+}
+
+.menu-toggle:hover {
+  cursor: pointer;
+}
+
+.btn {
+  width: 5em;
+  height: 3em;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  cursor: pointer;
 }
 
 @media (prefers-reduced-motion: no-preference) {
