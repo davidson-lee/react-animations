@@ -27,18 +27,13 @@
   cursor: pointer;
 }
 
-.btn {
-  width: 5em;
-  height: 3em;
-  border: 1px solid white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-}
-
-.btn:hover {
-  cursor: pointer;
+.bg-img {
+  position: absolute;
+  z-index: -1;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -48,7 +43,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  position: relative;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -56,6 +51,21 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.progress-container {
+  position: absolute;
+  width: 100vw;
+  height: 1em;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.progress {
+  width: 0%;
+  height: 100%;
+  background-color: rgba(255,255,255,0.7);
 }
 
 @keyframes App-logo-spin {
